@@ -4,22 +4,23 @@ const NavBar = () => {
   const navoptions = (
     <>
       <li>
-       <Link to='/'>Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
-       <Link to='/menu'>Our Menu</Link>
+        <Link to="/menu">Our Menu</Link>
       </li>
       <li>
-       <Link to=''>CONTACT US</Link>
+        <Link to="/order/dessert">OUR ORDER</Link>
       </li>
       <li>
-       <Link to='/order/dessert'>OUR ORDER</Link>
+        <Link to="/contact">CONTACT US</Link>
       </li>
       <li>
-       <Link to=''>DASHBOARD</Link>
+        <Link to="">DASHBOARD</Link>
       </li>
-     
-  
+      <li>
+        <Link to="/login">Login</Link>
+      </li>
     </>
   );
   return (
@@ -50,12 +51,12 @@ const NavBar = () => {
               {navoptions}
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost text-xl">Bistro Restaurant</Link>
+          <Link to="/" className="btn btn-ghost text-xl">
+            Bistro Restaurant
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-           {navoptions}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navoptions}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn">Button</a>
